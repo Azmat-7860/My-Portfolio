@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="shortcut icon" href="images/My_favicon.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+    <!--? Navbar Section -->
+
+    <header class="nav-wrap">
+        <!-- ?:- if i can change lg to xl ipad pro display working but not centerd this is done -->
+        <!-- todo but i want to in xl screen i want to add just icon is --->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo1.png" alt="logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-stream"></i>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav menu-navbar">
+                        <a class="nav-link active" aria-current="page" href="#home"><i
+                                class="fas fa-home mx-2"></i>Home</a>
+                        <a class="nav-link" href="#about"><i class="fas fa-address-card mx-2"></i>About</a>
+                        <a class="nav-link" href="#protfolio"><i class="fas fa-user-tie mx-2"></i>Portfolio</a>
+                        <a class="nav-link" href="#contact"><i class="fas fa-headset mx-2"></i>Contact</a>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Social Media
+                            </a>
+                            <ul class="dropdown-menu text-start">
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="https://www.instagram.com/mr_azmat_139/?igshid=MTNiYzNiMzkwZA%3D%3D"><i
+                                            class="fab fa-instagram mx-2"></i>Instagram</a>
+                                </li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li> -->
+                                <li><a class="dropdown-item"
+                                        href="https://www.linkedin.com/in/azmat-alli-khan-6aa793254/"><i
+                                            class="fab fa-linkedin mx-2"></i>Linkedin</a></li>
+                                <li><a class="dropdown-item"
+                                    href="https://github.com/Coder-Azmat"><i
+                                        class="fab fa-github mx-2"></i>Github</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--? Navbar Section Exit -->
+
+    <!-- ?Banner Section -->
+    <section class="banner-wrap" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-12 order-lg-1 order-2 banner-conntent">
+                    <h2 class=" position-relative">Hello & Welcome ;</h2>
+                    <h1 class=" animate__animated  animate__lightSpeedInLeft">It's  AZMAT  </h1>
+                    <h5 class="my-0" id="sentence">I'm a <span id="text"> last word.</span ><span id="cursor"></span></h5>
+                    <!-- <h5 class="text-uppercase">Full-stack web-Developer</h5> -->
+                    <br>
+                    <a href="#contactPage" ><button class="bn632-hover bn20 mt-4">Hire Me</button></a>
+                    <!-- <div class="mt-4 container-fluid">
+                         <div class=" px-0">
+                        </div>
+                    </div> -->
+                </div>
+                <div class="col-lg-5 col-12 order-1 order-lg-2 ">
+                    <div class="right-img">
+                        <img decoding="async" src="images/home-right.webp" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <!-- ?Banner Section Exit -->
+
+    <!-- ?About Section -->
+    <section class="about-wrap" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-12 mb-4 mb-lg-0">
+                    <img src="images/about-us.webp" alt="About Us" class="img-fluid">
+                </div>
+                <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                    <h3>Let's <br>Introduce About <br>Myself</h3>
+                    <p>Creative and motivated BCA student with a passion for programming and problem-solving. Junior in web development and eager to apply my skills and knowledge to contribute to innovative projects in the tech industry.</p>
+                    <!-- <a href="#" class="main-btn primary-btn mt-4"><i
+                            class="fas fa-arrow-alt-circle-down mx-2"></i>Download CV</a> -->
+                    <a href="/Azmat_Resume.pdf" download><button class="bn632-hover bn20"><i
+                                class="far fa-arrow-alt-circle-down mx-2"></i>Download CV</button></a>
+                </div>
+            </div>
+
+            <!--todo here i want to add cirtificates and add fresher  -->
+
+            <div class="row justify-content-center pt-5">
+                <div class="col-12 mb-4 mb-lg-0">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo">
+                                <img src="images/Skills/java.png" alt="Java">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo">
+                                <img src="images/Skills/spring.png" alt="Spring">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo">
+                                <img src="images/Skills/springboot.png" alt="Spring Boot">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo">
+                                <img src="images/Skills/js.png" alt="JavaScript">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo">
+                                <img src="images/Skills/reactjs.png" alt="React.js">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo">
+                                <img src="images/Skills/sql.png" alt="SQL">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo">
+                                <img src="images/Skills/mysql.jpeg" alt="MySQL">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo">
+                                <img src="images/Skills/bootstrap.jpeg" alt="Bootstrap">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo">
+                                <img src="images/Skills/css.png" alt="CSS">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="single-logo">
+                                <img src="images/Skills/html.png" alt="HTML">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 <!-- <div class="offset-lg-2 mb-lg-0 col-lg-4">
+                    <div class="client-info">
+                        <div class="d-flex ">
+                            <span class="large">10</span>
+                            <span class="smll">+ Years <br> Working<br>Experience </span>
+                        </div>
+                        <div class="call-us d-flex py-4 ">
+                            <div>
+                                <span class="fa fa-phone-alt"></span>
+                            </div>
+                            <div class="ms-4">
+                                <p>Call Me Now: </p>
+                                <h5>(+91)-999-666-5555</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <!-- ?About Section Exit -->
+
+    <!-- ?Protfolio section Section -->
+    <section id="protfolio" class="portfolio-wrap container">
+        <h3 class="text-center animate__animated animate__bounce">My Projects Are...</h3>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                  
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img src="images/project-img/netflix ss.jpg" >
+                        </div>
+                        <div class="card-content">
+                            <h5 class="mb-1">Netflix-Clone</h5>
+                            <p class="text-center">Netflix landing page with fully Responsive for all screen. <br><b>Tech Used : </b>HTML5,CSS,JS</p>
+                           <a href="https://coder-azmat-netflix-clone.netlify.app/" target="_blank" class="text-center">
+                                    <button type="submit" class="bn54 btn btn-outline-primary">
+                                        <span class="bn54span">Visit</span>
+                                    </button>
+                                </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img src="images/project-img/netflix ss.jpg" >
+                        </div>
+                        <div class="card-content">
+                            <h5 class="mb-1">Netflix-Clone</h5>
+                            <p class="text-center">Netflix landing page with fully Responsive for all screen. <br><b>Tech Used : </b>HTML5,CSS,JS</p>
+                           <a href="https://coder-azmat-netflix-clone.netlify.app/" target="_blank" class="text-center">
+                                    <button type="submit" class="bn54 btn btn-outline-primary">
+                                        <span class="bn54span">Visit</span>
+                                    </button>
+                                </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img src="images/project-img/netflix ss.jpg" >
+                        </div>
+                        <div class="card-content">
+                            <h5 class="mb-1">Netflix-Clone</h5>
+                            <p class="text-center">Netflix landing page with fully Responsive for all screen. <br><b>Tech Used : </b>HTML5,CSS,JS</p>
+                           <a href="https://coder-azmat-netflix-clone.netlify.app/" target="_blank" class="text-center">
+                                    <button type="submit" class="bn54 btn btn-outline-primary">
+                                        <span class="bn54span">Visit</span>
+                                    </button>
+                                </a>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <img src="images/project-img/netflix ss.jpg" >
+                        </div>
+                        <div class="card-content">
+                            <h5 class="mb-1">Netflix-Clone</h5>
+                            <p class="text-center">Netflix landing page with fully Responsive for all screen. <br><b>Tech Used : </b>HTML5,CSS,JS</p>
+                           <a href="https://coder-azmat-netflix-clone.netlify.app/" target="_blank" class="text-center">
+                                    <button type="submit" class="bn54 btn btn-outline-primary">
+                                        <span class="bn54span">Visit</span>
+                                    </button>
+                                </a>
+                        </div>
+                    </div>
+             
+                    <!-- Add more cards similarly -->
+                  
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- ?Protfolio section Section Exit -->
+
+
+    <!-- ?Contact section Section -->
+    <section id="contact" class="contact-wrap" style="background-image: url('images/contact.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 newsletter">
+                    <div class=" text-center">
+                        <h2 class="text-white">Feel Free To Contact!</h2>
+                        <p class="text-white">
+                            <i class="fas fa-map-marker-alt"></i> &nbsp; At/Po: Panashudha, Dist: Jajpur, 754250, Odisha, India.
+                        </p>
+                        <p class="text-white">
+                            <i class="fa-solid fa-envelope"></i> &nbsp;  <a href="mailto:contact.azmatalli@gmail.com?subject=Approch for Job&body=Hello i would like to contact you." class="text-white">
+                                Gmail : contact.azmatalli@gmail.com
+                            </a>
+                        </p>
+                     </div>
+                </div>
+                
+                <div class="contact-card col-md-6" id="contactPage">
+                    <div class="form-start p-4 border border-info">
+                        <div class="formc text-center mx-sm-2">
+                            <form onsubmit="sendWhatsApp(event)">
+                                <h2 class="text-white">Contact Me</h2>
+                                <!-- First name input -->
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="firstName" class="form-control border-info" placeholder="First Name" required>
+                                </div>
+                                <!-- Last name input -->
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="lastName" class="form-control border-info" placeholder="Last Name" required>
+                                </div>
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="email" class="form-control border-info" placeholder="e.g.: example@gmail.com" autocomplete="email" required>
+                                </div>
+                                <!-- Message input -->
+                                <div class="form-outline mb-4">
+                                    <input id="message" class="form-control border-info" placeholder="Message" required></input>
+                                </div>
+                                <!-- Submit button -->
+                                <button type="submit" class="bn54 btn btn-outline-primary">
+                                    <span class="bn54span">Send WhatsApp</span>
+                                </button>
+                                <!-- social media buttons -->
+                                <div class="text-center my-4">
+                                    <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                        <i class="fab fa-google"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ?Contact section Section Exit -->
+
+
+    <!-- ?Fotter section Section -->
+    <!-- Updated Footer Section -->
+    <!-- Updated Footer Section with Navigation Links -->
+<section class="footer-wrap bg-dark text-white text-center py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-sm-12">
+                <img src="images/logo1.png" alt="Logo" class="img-fluid footer-logo">
+            </div>
+            <div class="col-md-6 col-sm-12 mt-3 mt-md-0">
+                <div class="footer-links my-3">
+                    <a href="#home" class="text-white mx-2">Home</a>
+                    <a href="#about" class="text-white mx-2">About</a>
+                    <a href="#contact" class="text-white mx-2">Contact</a>
+                    <a href="#portfolio" class="text-white mx-2">Portfolio</a>
+                </div>
+                <p>&copy; 2024 All Rights Reserved To Azmat Alli Khan</p>
+                <!-- Navigation Links -->
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- ?Fotter section Section Exit -->
+    <script>
+        function sendWhatsApp(event) {
+            event.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const whatsappMessage = `Here are my details:\nName: ${firstName} ${lastName}\nEmail: ${email}\nMessage: ${message}`;
+
+
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=+918763480617&text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

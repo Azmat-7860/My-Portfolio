@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changing Last Word</title>
+  <style>
+    #sentence {
+      font-size: 24px;
+      margin-top: 50px;
+      text-align: center;
+      position: relative; /* Position relative for cursor */
+      display: inline-block; /* Needed for cursor positioning */
+    }
+
+    #text {
+      color: #ff0000; /* Red color for text */
+      animation: glow 1.5s ease-in-out infinite alternate; /* Glow animation */
+    }
+
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 5px #ff0000; /* Initial shadow */
+      }
+      100% {
+        text-shadow: 0 0 15px #ff0000; /* Glow shadow */
+      }
+    }
+
+    #cursor {
+      display: inline-block;
+      width: 2px; /* Cursor width */
+      height: 24px; /* Same as line height */
+      background-color: black;
+      animation: blink 0.5s infinite alternate; /* Blink animation */
+      position: absolute; /* Position relative to #sentence */
+      top: 0;
+      right: -4px; /* Position at the end of the sentence */
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 0; /* Invisible */
+      }
+      100% {
+        opacity: 1; /* Visible */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 id="sentence">I Am a <span id="text"> last word.</span ><span id="cursor"></span></h1>
+  <script>
+    const textElement = document.getElementById('text');
+    const cursorElement = document.getElementById('cursor');
+    const words = ['Web Devlopeer', 'Programer', 'OpenAI', 'ChatGPT'];
+    let currentWordIndex = 0;
+    let currentCharIndex = 0;
+    let isDeleting = false; // Flag to track if characters are being deleted
+    let interval;
+
+    function updateText() {
+      const word = words[currentWordIndex];
+      const currentText = textElement.textContent;
+
+      if (!isDeleting) {
+        // Typing characters
+        textElement.textContent = word.substring(0, currentCharIndex);
+        currentCharIndex++;
+
+        if (currentCharIndex > word.length) {
+          // Start deleting characters
+          isDeleting = true;
+          clearInterval(interval);
+          interval = setInterval(updateText, 100); // Speed up deletion
+        }
+      } else {
+        // Deleting characters
+        textElement.textContent = word.substring(0, currentCharIndex);
+        currentCharIndex--;
+
+        if (currentCharIndex === 0) {
+          // Done deleting, move to the next word
+          isDeleting = false;
+          currentWordIndex = (currentWordIndex + 1) % words.length;
+          clearInterval(interval);
+          interval = setInterval(updateText, 200); // Resume typing speed
+        }
+      }
+    }
+
+    function startTyping() {
+      clearInterval(interval); // Clear any existing interval
+      interval = setInterval(updateText, 200); // Type speed: 200 milliseconds per character
+    }
+
+    startTyping(); // Start typing initially
+
+    // Restart typing when the window is focused
+    window.addEventListener('focus', startTyping);
+  </script>
+</body>
+</html>

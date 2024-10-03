@@ -1,0 +1,113 @@
+/* !i want to collapse in 1199px screen */
+@media (max-width:1199px) {
+   h1 {
+      font-size: 3.75rem;
+   }
+
+   h2 {
+      font-size: 2.187rem;
+   }
+
+   h3 {
+      font-size: 1.87rem;
+      line-height: 2.68rem;
+   }
+
+   h5 {
+      font-size: 1.06rem;
+   }
+
+   /* this is only fo xl screen personal style */
+   /* .nav-wrap .menu-navbar {
+      text-align: center;
+      background-color: var(--bg-white);
+      padding-bottom: 1rem;
+   } */
+}
+
+
+@media (max-width:991px) {
+   .header-scrolled {
+      height: auto;
+   }
+
+   .nav-wrap .navbar-collapse {
+      margin-top: -0.124rem;
+   }
+
+   .nav-wrap .menu-navbar {
+      text-align: center;
+      background-color: var(--bg-white);
+      padding-bottom: 1rem;
+   }
+
+   .nav-wrap .nav-link {
+      margin-top: 1rem;
+   }
+
+   /* about */
+   .about-wrap .client-info::before {
+      top: 0.25rem;
+      left: 10.8rem;
+   }
+
+   .about-wrap .client-info>div {
+      justify-content: center;
+   }
+}
+
+
+@media (max-width:767px) {
+   h1 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+   }
+
+   h2 {
+      font-size: 1.87rem;
+      line-height: 2.37rem;
+   }
+
+   h3 {
+      font-size: 1.56rem;
+      line-height: 2.18rem;
+   }
+
+   h5 {
+      font-size: 1.06rem;
+   }
+
+   /* about */
+   /* todo here i have before content that is corner to div but in this screeen it change but i want to fix it same place for all screen  
+     1.i can change the div to and same image directly*/
+   .about-wrap .client-info::before {
+      top: 0.25rem;
+      left: 2.8rem;
+   }
+
+   .about-wrap .client-info>div {
+      justify-content: center;
+   }
+
+   /* contact sesction  */
+   .contact-wrap .form-start {
+
+      margin-top: 2rem;
+      max-width: 300px;
+
+
+   }
+
+}
+
+
+@media (max-width:575px) {
+
+   .contact-wrap .form-start {
+
+      margin-top: 2rem;
+      max-width: 300px;
+
+
+   }
+}
