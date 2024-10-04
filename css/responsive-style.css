@@ -104,10 +104,14 @@
 @media (max-width:575px) {
 
    .contact-wrap .form-start {
-
       margin-top: 2rem;
       max-width: 300px;
+   }
 
-
+   .logo-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 10px;
    }
 }

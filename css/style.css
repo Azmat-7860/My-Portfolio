@@ -30,7 +30,7 @@
     --bg-light: #faf8ff;
     --bg-black: #000;
     --bg-gray: #eee;
-    --gradient: linear-gradient(to , #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    --gradient: linear-gradient(to, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
 
     /* Text Color */
     --primary-text: #4458dc;
@@ -49,8 +49,6 @@ body {
     width: 100%;
     background-image: url('images/body-bg.png.webp');
     background-repeat: no-repeat;
-
-    /* background-color: aqua; */
 }
 
 /* Add more styles based on the variable values */
@@ -69,7 +67,7 @@ body {
 }
 
 section {
-    padding: 5rem 0;
+    padding: 2rem 0;
 }
 
 .main-btn {
@@ -200,7 +198,7 @@ h5 {
 }
 
 .dropdown>.dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
+
     pointer-events: none;
 }
 
@@ -240,100 +238,37 @@ h5 {
     -ms-grid-row-align: center;
     align-self: center;
 }
-/* .right-img{
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    border: 2px solid black;
-}
-.right-img img{
-    mix-blend-mode: multiply;
-    height: 100px;
-
-} */
-/* ! here we can addd a single line after code complete 47.57*/
 
 /*! 4 About  */
-.about-wrap .single-logo {
-    width: 100%;
-    height: 6.9rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: none;
-    /* border: 0.06rem solid var(--bg-gray);
-    transition: all .4s ease 0s; */
+.logo-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
 }
 
-.about-wrap .single-logo:hover {
-    border: 0.06rem solid transparent;
-    box-shadow: 0 0.5rem 1.87rem rgb(118 85 225 / 15%);
+
+.about-wrap .single-logo {
+    width: 100%;
+    height: 7rem;
+    cursor: pointer;
+    border: 0.06rem solid var(--bg-gray);
+    transition: all .4s ease 0s;
+
 }
 
 .single-logo img {
-    height: 6.9rem;
-    mix-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    padding: 10px 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
-
-.about-wrap .client-info {
-    padding: 1.5rem 1.8rem;
-    background-color: var(--bg-light);
-    position: relative;
-    margin-top: 1.5rem;
-}
-
-.about-wrap .client-info::before {
-    content: '';
-    position: absolute;
-    top: -1.5rem;
-    left: -2.4rem;
-    background-image: url('images/client-info.webp');
-    background-repeat: no-repeat;
-    height: 11rem;
-    width: 11rem;
-}
-
-.about-wrap .client-info .large {
-    color: var(--secondary-text);
-    font-size: 6rem;
-    position: relative;
-    font-weight: 700;
-    z-index: 10;
-}
-
-.about-wrap .client-info .smll {
-    text-align: left;
-    font-family: var(--primary-font);
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--text-black);
-    margin-left: 1.4rem;
-}
-
-.about-wrap .client-info .call-us {
-    margin-left: 1rem;
-}
-
-.about-wrap .client-info .call-us span {
-    padding-top: 0.8rem;
-    font-size: 2.3rem;
-    font-weight: 700;
-
-
-}
-
-.about-wrap .client-info .call-us p {
-
-    color: var(--secondary-text);
-    font-weight: bold;
-    margin-bottom: 0.2rem;
-}
-
-.about-wrap .client-info .call-us h5 {
-    font-weight: bolder;
+.about-wrap .single-logo:hover {
+    /* border: 0.06rem solid transparent; */
+    box-shadow: 0 0.5rem 1.87rem rgb(118 85 225 / 15%);
+    filter: drop-shadow(0 0.5rem 1.87rem rgb(118 85 225 / 15%));
+    
 }
 
 /* ! contact  */
@@ -382,11 +317,13 @@ h5 {
 
     color: var(--text-white);
 }
+
 .contact-wrap .formc input:hover {
-    border-radius:30px;
+    border-radius: 30px;
     border: 1px solid #555;
 
 }
+
 .contact-wrap .formc input:focus {
     outline: 0;
     border-color: var(--bg-white);
@@ -480,9 +417,10 @@ h5 {
 
 .image-content img {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;
+    height: 150px;
+    object-fit: cover;
+    /* aspect-ratio: 3/2; */
+    border-radius: 0.5rem;
     -webkit-box-shadow: 6px 7px 12px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 6px 7px 12px 0px rgba(0, 0, 0, 0.3);
     -webkit-transition: -webkit-transform 0.3s ease;
