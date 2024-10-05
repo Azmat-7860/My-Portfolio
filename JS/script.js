@@ -96,3 +96,18 @@ navBar.forEach(function (a){
 
   // Restart typing when the window is focused
   window.addEventListener('focus', startTyping);
+
+  // contact section 
+  function sendWhatsApp(event) {
+    event.preventDefault();
+
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const whatsappMessage = `Here are my details:\nName: ${firstName} ${lastName}\nEmail: ${email}\nMessage: ${message}`;
+
+
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=+918763480617&text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
+}

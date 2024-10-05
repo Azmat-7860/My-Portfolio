@@ -114,4 +114,8 @@
       grid-template-rows: auto;
       gap: 10px;
    }
+   section {
+      padding: 2rem 0;
+  }
+  
 }

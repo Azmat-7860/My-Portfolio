@@ -67,7 +67,7 @@ body {
 }
 
 section {
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 .main-btn {
@@ -125,7 +125,7 @@ h1 {
     font-weight: 700;
     /* color: var(--text-black); */
     color: var(--secondary-text);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.15rem;
     font-family: var(--primary-font);
 }
 
@@ -133,7 +133,7 @@ h2 {
     font-weight: 500;
     font-size: 2.5rem;
     line-height: 3.4375rem;
-    margin-bottom: 1.5625rem;
+    
     color: var(--text-black);
     font-family: var(--primary-font);
 }
@@ -299,7 +299,6 @@ h5 {
     text-align: center;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    /* Blur effect */
     padding: 20px;
 }
 
@@ -314,20 +313,28 @@ h5 {
     background: transparent;
     line-height: 1rem;
     border: none;
-
+    border-bottom: 1px solid #0dcaf0;
     color: var(--text-white);
+    font-size: small;
+    transition: all 0.3s ease;
 }
 
-.contact-wrap .formc input:hover {
+.contact-wrap .formc input:hover { 
+    border-radius: 30px;
+    border: 1px solid #0dcaf0;
+
+}
+/* .contact-wrap .formc input:is(:focus) { 
+   
     border-radius: 30px;
     border: 1px solid #555;
 
-}
+} */
 
-.contact-wrap .formc input:focus {
+/* .contact-wrap .formc input:focus {
     outline: 0;
     border-color: var(--bg-white);
-}
+} */
 
 .contact-wrap .formc input::-webkit-input-placeholder {
     color: var(--bg-gray);
