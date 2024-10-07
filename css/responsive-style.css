@@ -54,6 +54,11 @@
    .about-wrap .client-info>div {
       justify-content: center;
    }
+   .ab-skill{
+      /* margin: 50px 0px; */
+      margin-bottom: 35px;
+      margin-top: 10px;
+   }
 }
 
 
