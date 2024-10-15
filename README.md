@@ -8,7 +8,10 @@ View the live portfolio at:
 
 This is a personal portfolio website designed to showcase my skills, projects, and experience as a web developer. Built using **HTML**, **CSS**, **JavaScript**, and **Bootstrap**, this website provides an overview of my work, including featured projects and information about my education and background.
 
-![Portfolio Screenshot](https://azmat-7860.github.io/My-Portfolio/) <!-- You can add a screenshot of your portfolio here -->
+![Portfolio Screenshot](/images/pf/Screenshot%201.png)
+![Portfolio Screenshot](/images/pf/Screenshot%202.png)
+![Portfolio Screenshot](/images/pf/Screenshot%203.png)
+![Portfolio Screenshot](/images/pf/Screenshot%204.png)
 
 ## Features
 
