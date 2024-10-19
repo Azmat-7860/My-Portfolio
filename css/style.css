@@ -90,7 +90,8 @@ body {
 }
 
 section {
-  padding: 4rem 0;
+  margin: 4rem 0;
+  /* height: 100dvh; */
 }
 
 .main-btn {
@@ -783,6 +784,7 @@ h5 {
   height: 60px;
   width: 60px;
   border-radius: 50%;
+  cursor: grab;
 }
 .checkbox {
   opacity: 0;
