@@ -23,17 +23,20 @@
 }
 :root {
   /* Background Color */
+  --bg-color: #ffffff;
   --primary-color: #3cd77a;
   --secondary-color: #2edfdb;
   --bg-header: rgba(255, 255, 255, 0.736);
   --border-color: #eee;
+  --bg-theme: #000000;
+  --shadow: rgba(201, 185, 252, 0.15);
+
   /* Text Color */
   --primary-text: #3cd77a;
   --secondary-text: #2edfdb;
-  --text-color: #000;
+  --text-color: #333333;
 
   /* Font Family */
-  /* font-family: "Play", sans-serif; */
   --primary-font: "Rowdies", sans-serif;
   --secondary-font: "Play", sans-serif;
 }
@@ -45,7 +48,9 @@ body.dark-theme {
   --primary-color: #3cd77a;
   --secondary-color: #2edfdb;
   --bg-header: rgba(0, 0, 0, 0.736);
-  --border-color: #eee;
+  --border-color: #888;
+  --bg-theme: #ffffff;
+  --shadow: rgb(255, 255, 255, 0.15);
 
   /* Text Color */
   --primary-text: #3cd77a;
@@ -290,8 +295,8 @@ h5 {
 
 .about-wrap .single-logo:hover {
   /* border: 0.06rem solid transparent; */
-  box-shadow: 0 0.5rem 1.87rem rgb(118 85 225 / 15%);
-  filter: drop-shadow(0 0.5rem 1.87rem rgb(118 85 225 / 15%));
+  box-shadow: 0 0.5rem 1.87rem var(--shadow);
+  filter: drop-shadow(0 0.5rem 1.87rem var(--shadow));
 }
 
 /* ! contact  */
@@ -385,7 +390,6 @@ h5 {
 
 .footer-wrap .footer-links a {
   color: var(--text-color) !important;
-  /* background-color: red; */
 }
 
 /*! Protfolio section  */
@@ -510,12 +514,12 @@ h5 {
 
 /*  ! buttons */
 .bn632-hover {
-  width: 170px;
+  width: 150px;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  height: 55px;
+  height: 45px;
   text-align: center;
   border: none;
   background-size: 300% 100%;
@@ -775,9 +779,7 @@ h5 {
   place-items: center;
   bottom: 20px;
   right: 20px;
-  /* background-color: var(--secondary-color); */
-  background-color: #111;
-
+  background-color: var(--bg-theme);
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -808,7 +810,7 @@ h5 {
 }
 
 .checkbox-label .ball {
-  background-color: #fff;
+  background-color: var(--secondary-color);
   width: 22px;
   height: 22px;
   position: absolute;

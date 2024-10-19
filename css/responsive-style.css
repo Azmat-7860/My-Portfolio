@@ -29,7 +29,7 @@
 
   .nav-wrap .menu-navbar {
     text-align: center;
-    /* background-color: var(--bg-header); */
+    background-color: var(--bg-color);
     padding-bottom: 1rem;
   }
 
