@@ -111,3 +111,19 @@ navBar.forEach(function (a){
     const whatsappUrl = `https://api.whatsapp.com/send?phone=+918763480617&text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
 }
+
+// dark theme and light theme 
+
+  const themeToggleButton = document.getElementById('theme-toggle');
+  const bodyElement = document.body;
+
+  themeToggleButton.addEventListener('click', () => {
+    bodyElement.classList.toggle('dark-theme'); // Toggle the dark-theme class
+    if (bodyElement.classList.contains('dark-theme')) {
+      themeToggleButton.textContent = 'Switch to Light Theme'; // Change button text
+    } else {
+      themeToggleButton.textContent = 'Switch to Dark Theme'; // Revert to default text
+    }
+  });
+
+

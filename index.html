@@ -22,7 +22,15 @@
     <link rel="stylesheet" href="css/responsive-style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+<body data-bs-spy="scroll" class="position-relative" data-bs-target=".navbar" data-bs-offset="90">
+    <!-- <div class="themeBtn">
+        <input type="checkbox" hidden class="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="checkbox-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+        </label>
+    </div> -->
     <!--? Navbar Section -->
 
     <header class="nav-wrap">
@@ -33,6 +41,17 @@
                     <!-- <img src="images/logo1.png" alt="logo" class="img-fluid"> -->
                     <h1 class="fs-1">Portfolio</h1>
                 </a>
+                <div class="themeBtn">
+                    <div class="">
+                        <input type="checkbox" hidden class="checkbox" id="theme-toggle">
+                        <label for="theme-toggle" class="checkbox-label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
+                </div>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -93,9 +112,17 @@
                     <a href="#contactPage">
                         <button class="bn632-hover bn20 mt-4">
                             <i class=" me-2 fa-solid fa-phone-volume"></i>Hire Me</button></a>
+                    <!-- <div>
+                        <input type="checkbox" hidden class="checkbox" id="theme-toggle">
+                        <label for="theme-toggle" class="checkbox-label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <span class="ball"></span>
+                        </label>
+                    </div> -->
 
                 </div>
-                <div class="col-lg-5 col-12 order-1 order-lg-2">
+                <div class="col-lg-5 col-12 order-1 order-lg-2 text-center">
                     <div class="right-img">
                         <img decoding="async" src="images/hero1.png" class="img-fluid">
                     </div>
@@ -336,12 +363,13 @@
 
     <!-- ?Fotter section Section -->
 
-    <section class="footer-wrap bg-dark text-white text-center py-3">
+    <section class="footer-wrap text-center py-3">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 col-sm-12">
                     <img src="images/logo1.png" alt="Logo" class="img-fluid footer-logo">
                 </div>
+
                 <div class="col-md-6 col-sm-12 mt-3 mt-md-0">
                     <div class="footer-links my-3">
                         <a href="#home" class="text-white mx-2">Home</a>

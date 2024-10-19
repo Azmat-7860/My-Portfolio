@@ -16,13 +16,6 @@
   h5 {
     font-size: 1.06rem;
   }
-
-  /* this is only fo xl screen personal style */
-  /* .nav-wrap .menu-navbar {
-      text-align: center;
-      background-color: var(--bg-white);
-      padding-bottom: 1rem;
-   } */
 }
 
 @media (max-width: 991px) {
@@ -36,7 +29,7 @@
 
   .nav-wrap .menu-navbar {
     text-align: center;
-    background-color: var(--bg-white);
+    /* background-color: var(--bg-header); */
     padding-bottom: 1rem;
   }
 
