@@ -49,7 +49,12 @@ var swiper = new Swiper(".slide-content", {
 //   typing effect
 const textElement = document.getElementById("text");
 const cursorElement = document.getElementById("cursor");
-const words = ["Web Devloper;", "Programer;", "Coder;"];
+const words = [
+  "Front-End Developer;",
+  "Back-End Developer;",
+  "Full Stack Developer;",
+];
+
 let currentWordIndex = 0;
 let currentCharIndex = 0;
 let isDeleting = false; // Flag to track if characters are being deleted
@@ -122,7 +127,29 @@ themeToggleButton.addEventListener("click", () => {
 // dragable theme btn
 const themeBtn = document.querySelector(".themeBtn");
 
+// for pc
 themeBtn.addEventListener("dragend", (e) => {
   const y = e.clientY;
   themeBtn.style.top = y + "px";
 });
+
+// for mobile
+let offsetY,
+  isDragging = false;
+
+themeBtn.addEventListener("touchstart", (e) => {
+  const touch = e.touches[0];
+  offsetY = touch.clientY - themeBtn.offsetTop;
+  isDragging = true;
+});
+
+themeBtn.addEventListener("touchmove", (e) => {
+  if (isDragging) {
+    e.preventDefault(); // Prevent scrolling while dragging and dive functionallity also
+    const touch = e.touches[0];
+    themeBtn.style.top = touch.clientY - offsetY + "px";
+  }
+});
+
+themeBtn.addEventListener("touchend", () => (isDragging = false));
+themeBtn.addEventListener("touchcancel", () => (isDragging = false));

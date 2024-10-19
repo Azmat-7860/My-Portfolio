@@ -307,6 +307,8 @@ h5 {
 }
 
 .contact-wrap {
+  padding: 50px 0px;
+  margin-bottom: 0px;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -572,7 +574,6 @@ h5 {
 /* ! another buton  */
 .bn54 {
   position: relative;
-  /* outline: none; */
   text-decoration: none;
   border-radius: 50px;
   display: -webkit-box;
@@ -727,7 +728,6 @@ h5 {
 }
 
 .footer-wrap .footer-links a:hover {
-  /* background: linear-gradient(-60deg, #ff9100 20%, #f10366 0%, #6173ff 100%); */
   background-image: var(--gradient);
   border-radius: 0.5rem;
   padding: 0.3rem;
@@ -741,9 +741,7 @@ h5 {
   margin-top: 50px;
   text-align: center;
   position: relative;
-  /* Position relative for cursor */
   display: inline-block;
-  /* Needed for cursor positioning */
 }
 
 #text {
@@ -765,12 +763,10 @@ h5 {
 @keyframes blink {
   0% {
     opacity: 0;
-    /* Invisible */
   }
 
   100% {
     opacity: 1;
-    /* Visible */
   }
 }
 /* dark and light theme */
@@ -778,7 +774,7 @@ h5 {
   position: fixed;
   display: grid;
   place-items: center;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   background-color: var(--bg-theme);
   height: 60px;
