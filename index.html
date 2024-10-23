@@ -6,32 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 
-    <link rel="shortcut icon" href="images/My_favicon.png" type="image/png">
 
+    <link rel="shortcut icon" href="images/My_favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
 </head>
 
 <body data-bs-spy="scroll" class="position-relative" data-bs-target=".navbar" data-bs-offset="90">
-    <!-- <div class="themeBtn">
-        <input type="checkbox" hidden class="checkbox" id="theme-toggle">
-        <label for="theme-toggle" class="checkbox-label">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-            <span class="ball"></span>
-        </label>
-    </div> -->
-    <!--? Navbar Section -->
 
     <header class="nav-wrap">
 
@@ -123,7 +110,7 @@
                     </div> -->
 
                 </div>
-                <div class="col-lg-5 col-12 order-1 order-lg-2 text-center">
+                <div data-aos="flip-left" class="col-lg-5 col-12 order-1 order-lg-2 text-center">
                     <div class="right-img">
                         <img decoding="async" src="images/hero1.png" class="img-fluid">
                     </div>
@@ -140,19 +127,20 @@
             <div class="row ">
 
                 <div class="col-lg-5 col-12 mb-4 mb-lg-0">
-                    <h3>Let's <br>Introduce About <br>Myself</h3>
-                    <p class="mb-4">Creative and motivated BCA student with a passion for programming and
+                    <h3 data-aos="zoom-in-up">Let's <br>Introduce About <br>Myself</h3>
+                    <p data-aos="zoom-in-up" class="mb-4">Creative and motivated BCA student with a passion for
+                        programming and
                         problem-solving. Experience
                         in
                         web development and eager to apply my skills and knowledge to contribute to innovative projects
                         in the tech industry.</p>
-                    <a href="/Azmat_Resume.pdf" class="" download>
-                        <button class="bn632-hover bn20  ">
+                    <a href="/Azmat_Resume.pdf" class="" download="true">
+                        <button data-aos="zoom-in-up" class="bn632-hover bn20  ">
                             <i class="far fa-arrow-alt-circle-down mx-2"></i>
                             Download CV</button>
                     </a>
                 </div>
-                <div class="col-lg-7 col-12 mb-4 mb-lg-0">
+                <div data-aos="zoom-in-up" class="col-lg-7 col-12 mb-4 mb-lg-0">
                     <!-- <img src="images/about-us.webp" alt="About Us" class="img-fluid"> -->
                     <h3 class="text-center ab-skill fw-bolder">My <span class="span-text">skills</span>
                     </h3>
@@ -191,9 +179,9 @@
 
     <!-- ?Protfolio section Section -->
     <section id="protfolio" class="portfolio-wrap container " style="padding-top: 0px;">
-        <h3 class="text-center ">My <span class="span-text" style="">Projects</span>
+        <h3 data-aos="zoom-in-up" class="text-center ">My <span class="span-text" style="">Projects</span>
         </h3>
-        <div class="slide-container swiper">
+        <div data-aos="zoom-in-up" class="slide-container swiper">
             <div class="slide-content">
                 <div class="card-wrapper swiper-wrapper">
                     <div class="card swiper-slide">
@@ -201,7 +189,7 @@
                             <img src="images/project-img/Pixxa-store.png">
                         </div>
                         <div class="card-content">
-                            <h5 class="mb-1">Pixxa Store</h5>
+                            <h4 class="mb-1">Pixxa Store</h4>
                             <p class="text-center">An interactive Pixxa Store website featuring sleek design and smooth
                                 user navigation.
                                 <br><b>Tech Stack:</b> HTML5, CSS, JavaScript, Bootstrap
@@ -219,7 +207,7 @@
                             <img src="images/project-img/Screenshot1.png">
                         </div>
                         <div class="card-content">
-                            <h5 class="mb-1">Fashion Store</h5>
+                            <h4 class="mb-1">Fashion Store</h4>
                             <p class="text-center">A modern, mobile-friendly fashion store website optimized for all
                                 devices and screen sizes.
                                 <br><b>Tech Stack:</b> HTML5, CSS, JavaScript, Bootstrap
@@ -237,7 +225,7 @@
                             <img src="images/project-img/News-app.png" alt="News App Screenshot">
                         </div>
                         <div class="card-content">
-                            <h5 class="mb-1">News App</h5>
+                            <h4 class="mb-1">News App</h4>
                             <p class="text-center">A dynamic News application that fetches real-time articles based on
                                 user preferences.
                                 <br><b>Tech Stack:</b> React JS, Context API, HTML5, CSS, JavaScript, Bootstrap
@@ -256,7 +244,7 @@
                             <img src="images/project-img/Todo.png" alt="Todo Project Image">
                         </div>
                         <div class="card-content">
-                            <h5 class="mb-1">Todo App</h5>
+                            <h4 class="mb-1">Todo App</h4>
                             <p class="text-center">
                                 A simple Todo app to add, complete, and delete tasks with local storage for persistence.
                                 <br><b>Tech Stack:</b> React, HTML5, CSS, JavaScript, Bootstrap
@@ -275,7 +263,7 @@
                                 alt="Firebase Contact App Screenshot">
                         </div>
                         <div class="card-content">
-                            <h5 class="mb-1">Firebase Contact App</h5>
+                            <h4 class="mb-1">Firebase Contact App</h4>
                             <p class="text-center">A responsive app for managing contacts using Firebase for real-time
                                 data handling.
                                 <br><b>Tech Stack:</b> Firebase,React, HTML5, CSS, JavaScript, Bootstrap
@@ -307,7 +295,7 @@
     <section id="contact" class="contact-wrap" style="background-image: url('images/contact.jpg');">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 newsletter">
+                <div data-aos="zoom-in-up" class="col-md-6 newsletter">
                     <div class=" text-center">
                         <h2 class="text-white">Feel Free To Contact !!</h2>
                         <p class="text-white">
@@ -325,7 +313,7 @@
                     </div>
                 </div>
 
-                <div class="contact-card col-md-6" id="contactPage">
+                <div data-aos="flip-left" class="contact-card col-md-6" id="contactPage">
                     <div class="form-start p-4 ">
                         <div class="formc text-center mx-sm-2">
                             <form onsubmit="sendWhatsApp(event)">
@@ -392,15 +380,20 @@
 
 
     <!-- ?Fotter section Section Exit -->
-    <script>
-
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
     <script src="JS/swiper-bundle.min.js"></script>
     <script src="JS/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            offset: 250,
+            duration: 1000,
+        });
+    </script>
 </body>
 
 </html>

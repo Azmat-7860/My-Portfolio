@@ -23,27 +23,6 @@
 }
 :root {
   /* Background Color */
-  --bg-color: #ffffff;
-  --primary-color: #3cd77a;
-  --secondary-color: #2edfdb;
-  --bg-header: rgba(255, 255, 255, 0.736);
-  --border-color: #eee;
-  --bg-theme: #000000;
-  --shadow: rgba(201, 185, 252, 0.15);
-
-  /* Text Color */
-  --primary-text: #3cd77a;
-  --secondary-text: #2edfdb;
-  --text-color: #333333;
-
-  /* Font Family */
-  --primary-font: "Rowdies", sans-serif;
-  --secondary-font: "Play", sans-serif;
-}
-
-/* Dark Theme */
-body.dark-theme {
-  /* Background Color */
   --bg-color: #000000;
   --primary-color: #3cd77a;
   --secondary-color: #2edfdb;
@@ -56,6 +35,27 @@ body.dark-theme {
   --primary-text: #3cd77a;
   --secondary-text: #2edfdb;
   --text-color: #fff3cd;
+
+  /* Font Family */
+  --primary-font: "Rowdies", sans-serif;
+  --secondary-font: "Play", sans-serif;
+}
+
+/* Light Theme */
+body.dark-theme {
+  /* Background Color */
+  --bg-color: #ffffff;
+  --primary-color: #3cd77a;
+  --secondary-color: #2edfdb;
+  --bg-header: rgba(255, 255, 255, 0.736);
+  --border-color: #eee;
+  --bg-theme: #000000;
+  --shadow: rgba(201, 185, 252, 0.15);
+
+  /* Text Color */
+  --primary-text: #3cd77a;
+  --secondary-text: #2edfdb;
+  --text-color: #333333;
 
   /* Font Family */
   --primary-font: "Rowdies", sans-serif;
