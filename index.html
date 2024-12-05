@@ -333,31 +333,33 @@
                 <div data-aos="flip-left" class="contact-card col-md-6" id="contactPage">
                     <div class="form-start p-4 ">
                         <div class="formc text-center mx-sm-2">
-                            <form onsubmit="sendWhatsApp(event)">
+                            <!-- <form onsubmit="sendWhatsApp(event)"> -->
+                                <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="745cf586-defb-4c5a-8218-10c1df563bc2">
                                 <h2 class="text-white" style="letter-spacing: 2px;
     font-family: Londrina Sketch;">Contact Me !!</h2>
                                 <!-- First name input -->
                                 <div class="form-outline mb-4">
-                                    <input type="text" id="firstName" class="form-control" placeholder="First Name"
+                                    <input type="text" id="firstName" name="name"   class="form-control" placeholder="First Name"
                                         required>
                                 </div>
-                                <!-- Last name input -->
+                                <!-- Last name input
                                 <div class="form-outline mb-4">
                                     <input type="text" id="lastName" class="form-control" placeholder="Last Name"
                                         required>
-                                </div>
+                                </div> -->
                                 <!-- Email input -->
                                 <div class="form-outline mb-4">
-                                    <input type="email" id="email" class="form-control"
+                                    <input type="email" id="email" class="form-control" name="email"
                                         placeholder="e.g.: example@gmail.com" autocomplete="email" required>
                                 </div>
                                 <!-- Message input -->
                                 <div class="form-outline mb-4">
-                                    <input id="message" class="form-control" placeholder="Message" required></input>
+                                    <input id="message" class="form-control "  name="message" placeholder="Message" required></input>
                                 </div>
                                 <!-- Submit button -->
                                 <button type="submit" class="bn54 btn btn-outline-primary m-auto">
-                                    <span class="bn54span">WhatsApp</span>
+                                    <span class="bn54span">Send</span>
                                 </button>
 
                             </form>
